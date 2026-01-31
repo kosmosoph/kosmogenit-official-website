@@ -20,27 +20,27 @@ Designed with a strong focus on atmosphere, rhythm, and minimalism.
 
 ## Development
 
-Install dependencies:
+**Install dependencies:**
 
 pnpm install
-# or
+    or
 npm install
-# or
+    or
 yarn install
 
 
-Run the development server::
+**Run the development server:**
 
 pnpm dev
-# or
+    or
 npm run dev
-# or
+    or
 yarn dev
 
 Open http://localhost:3000 in your browser.
 
 
-You can start editing the main page by modifying:
+**You can start editing the main page by modifying:**
 
 app/page.tsx
 
