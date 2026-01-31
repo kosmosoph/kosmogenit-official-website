@@ -58,10 +58,12 @@ export function HeroSection() {
             </div>
 
             {/* Small descriptive text */}
-            <p className="text-sm text-black/50 max-w-md leading-relaxed">
+            <p className="text-xl text-black/50 max-w-md italic leading-relaxed">
               {/* Experience the evolution of sound with KOSMOGENIT's unique blend of contemporary music and artistic vision. */}
-              Autentična pop muzika nastala kroz spoj poezije, akustike i
-              elektronike.
+              {/* Autentična pop muzika nastala kroz spoj poezije, akustike i
+              elektronike. */}
+
+              "Snovest" je mesto u duši gde pobegneš od svega.
             </p>
           </div>
 

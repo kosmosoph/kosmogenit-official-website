@@ -1,4 +1,4 @@
-import { X, Download, Image, FileText, Music } from 'lucide-react';
+import { X, Download, Image, FileText, Music } from "lucide-react";
 
 interface MediaKitModalProps {
   isOpen: boolean;
@@ -9,11 +9,11 @@ export function MediaKitModal({ isOpen, onClose }: MediaKitModalProps) {
   if (!isOpen) return null;
 
   const singles = [
-    { id: 1, title: 'Cosmic Dreams', year: '2026' },
-    { id: 2, title: 'Golden Hour', year: '2025' },
-    { id: 3, title: 'Midnight Echo', year: '2025' },
-    { id: 4, title: 'Stellar Waves', year: '2024' },
-    { id: 5, title: 'Neon Pulse', year: '2024' },
+    { id: 1, title: "Portal", year: "2026" },
+    { id: 2, title: "Pustinjska princeza", year: "2025" },
+    { id: 3, title: "Da ovako ne mora", year: "2024" },
+    { id: 4, title: "Damar", year: "2024" },
+    { id: 5, title: "Kujem plan", year: "2024" },
   ];
 
   const handleDownload = (itemName: string) => {
@@ -35,10 +35,13 @@ export function MediaKitModal({ isOpen, onClose }: MediaKitModalProps) {
         {/* Header */}
         <div className="sticky top-0 bg-white border-b border-black/10 p-6 sm:p-8 flex justify-between items-start z-10">
           <div>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tighter mb-2">
+            <h2 className="text-3xl text-black  sm:text-4xl lg:text-5xl font-bold tracking-tighter mb-2">
               MEDIA KIT
             </h2>
-            <p className="text-black/50">Download press materials</p>
+            <p className="text-black/50">
+              {/* Translate -  Download press materials */}
+              Preuzmi press materijal
+            </p>
           </div>
           <button
             onClick={onClose}
@@ -59,28 +62,42 @@ export function MediaKitModal({ isOpen, onClose }: MediaKitModalProps) {
             </h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <button
-                onClick={() => handleDownload('Biography')}
+                onClick={() => handleDownload("Biography")}
                 className="group p-6 border-2 border-black/10 hover:border-[#FFD700] hover:bg-[#FFD700] transition-all duration-300 text-left"
               >
                 <div className="flex items-start justify-between">
                   <div>
-                    <p className="font-bold text-black text-lg mb-1">Biografija</p>
-                    <p className="text-sm text-black/50 group-hover:text-black/70">Official bio (PDF)</p>
+                    <p className="font-bold text-black text-lg mb-1">
+                      Biografija
+                    </p>
+                    <p className="text-sm text-black/50 group-hover:text-black/70">
+                      Official bio (PDF)
+                    </p>
                   </div>
-                  <Download size={20} className="text-black/30 group-hover:text-black" />
+                  <Download
+                    size={20}
+                    className="text-black/30 group-hover:text-black"
+                  />
                 </div>
               </button>
 
               <button
-                onClick={() => handleDownload('Biography - Short Version')}
+                onClick={() => handleDownload("Biography - Short Version")}
                 className="group p-6 border-2 border-black/10 hover:border-[#FFD700] hover:bg-[#FFD700] transition-all duration-300 text-left"
               >
                 <div className="flex items-start justify-between">
                   <div>
-                    <p className="font-bold text-black text-lg mb-1">Kratka biografija</p>
-                    <p className="text-sm text-black/50 group-hover:text-black/70">Short bio (PDF)</p>
+                    <p className="font-bold text-black text-lg mb-1">
+                      Kratka biografija
+                    </p>
+                    <p className="text-sm text-black/50 group-hover:text-black/70">
+                      Short bio (PDF)
+                    </p>
                   </div>
-                  <Download size={20} className="text-black/30 group-hover:text-black" />
+                  <Download
+                    size={20}
+                    className="text-black/30 group-hover:text-black"
+                  />
                 </div>
               </button>
             </div>
@@ -94,41 +111,58 @@ export function MediaKitModal({ isOpen, onClose }: MediaKitModalProps) {
             </h3>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
               <button
-                onClick={() => handleDownload('Press Photos - High Res')}
+                onClick={() => handleDownload("Press Photos - High Res")}
                 className="group p-6 border-2 border-black/10 hover:border-[#FFD700] hover:bg-[#FFD700] transition-all duration-300 text-left"
               >
                 <div className="flex flex-col gap-2">
                   <div className="flex items-start justify-between">
-                    <p className="font-bold text-black text-lg">Slike (Hi-Res)</p>
-                    <Download size={20} className="text-black/30 group-hover:text-black" />
+                    <p className="font-bold text-black text-lg">
+                      Slike (Hi-Res)
+                    </p>
+                    <Download
+                      size={20}
+                      className="text-black/30 group-hover:text-black"
+                    />
                   </div>
-                  <p className="text-sm text-black/50 group-hover:text-black/70">ZIP, 25MB</p>
+                  <p className="text-sm text-black/50 group-hover:text-black/70">
+                    ZIP, 25MB
+                  </p>
                 </div>
               </button>
 
               <button
-                onClick={() => handleDownload('Press Photos - Web')}
+                onClick={() => handleDownload("Press Photos - Web")}
                 className="group p-6 border-2 border-black/10 hover:border-[#FFD700] hover:bg-[#FFD700] transition-all duration-300 text-left"
               >
                 <div className="flex flex-col gap-2">
                   <div className="flex items-start justify-between">
                     <p className="font-bold text-black text-lg">Slike (Web)</p>
-                    <Download size={20} className="text-black/30 group-hover:text-black" />
+                    <Download
+                      size={20}
+                      className="text-black/30 group-hover:text-black"
+                    />
                   </div>
-                  <p className="text-sm text-black/50 group-hover:text-black/70">ZIP, 8MB</p>
+                  <p className="text-sm text-black/50 group-hover:text-black/70">
+                    ZIP, 8MB
+                  </p>
                 </div>
               </button>
 
               <button
-                onClick={() => handleDownload('Logo Package')}
+                onClick={() => handleDownload("Logo Package")}
                 className="group p-6 border-2 border-black/10 hover:border-[#FFD700] hover:bg-[#FFD700] transition-all duration-300 text-left"
               >
                 <div className="flex flex-col gap-2">
                   <div className="flex items-start justify-between">
                     <p className="font-bold text-black text-lg">Logo</p>
-                    <Download size={20} className="text-black/30 group-hover:text-black" />
+                    <Download
+                      size={20}
+                      className="text-black/30 group-hover:text-black"
+                    />
                   </div>
-                  <p className="text-sm text-black/50 group-hover:text-black/70">SVG + PNG</p>
+                  <p className="text-sm text-black/50 group-hover:text-black/70">
+                    SVG + PNG
+                  </p>
                 </div>
               </button>
             </div>
@@ -148,19 +182,25 @@ export function MediaKitModal({ isOpen, onClose }: MediaKitModalProps) {
                 >
                   <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-4">
                     <div>
-                      <h4 className="text-xl font-bold">{single.title}</h4>
+                      <h4 className="text-xl text-black  font-bold">
+                        {single.title}
+                      </h4>
                       <p className="text-sm text-black/50">{single.year}</p>
                     </div>
                   </div>
                   <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
                     <button
-                      onClick={() => handleDownload(`${single.title} - Press Release`)}
+                      onClick={() =>
+                        handleDownload(`${single.title} - Press Release`)
+                      }
                       className="px-4 py-3 bg-black/5 hover:bg-[#FFD700] text-sm font-bold uppercase tracking-wider transition-all duration-300 text-center"
                     >
                       Press Release
                     </button>
                     <button
-                      onClick={() => handleDownload(`${single.title} - Cover Art`)}
+                      onClick={() =>
+                        handleDownload(`${single.title} - Cover Art`)
+                      }
                       className="px-4 py-3 bg-black/5 hover:bg-[#FFD700] text-sm font-bold uppercase tracking-wider transition-all duration-300 text-center"
                     >
                       Cover Art
@@ -172,7 +212,9 @@ export function MediaKitModal({ isOpen, onClose }: MediaKitModalProps) {
                       Slike
                     </button>
                     <button
-                      onClick={() => handleDownload(`${single.title} - Full Kit`)}
+                      onClick={() =>
+                        handleDownload(`${single.title} - Full Kit`)
+                      }
                       className="px-4 py-3 bg-[#FFD700] hover:bg-black hover:text-white text-sm font-bold uppercase tracking-wider transition-all duration-300 text-center"
                     >
                       Sve
@@ -186,7 +228,7 @@ export function MediaKitModal({ isOpen, onClose }: MediaKitModalProps) {
           {/* Download All */}
           <div className="pt-8 border-t border-black/10">
             <button
-              onClick={() => handleDownload('Complete Media Kit')}
+              onClick={() => handleDownload("Complete Media Kit")}
               className="w-full px-10 py-6 bg-[#FFD700] text-black text-lg uppercase tracking-widest hover:bg-black hover:text-white transition-all duration-300 font-bold flex items-center justify-center gap-3"
             >
               <Download size={24} />
