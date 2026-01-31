@@ -43,4 +43,6 @@ next-env.d.ts
 # agent specific
 .cursorrules
 plan.md
+progress.md
 progress.json
+rules.md

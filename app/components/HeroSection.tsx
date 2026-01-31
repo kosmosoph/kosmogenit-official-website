@@ -31,8 +31,7 @@ export function HeroSection() {
                 GENIT
               </h1>
               <p className="text-2xl sm:text-3xl md:text-4xl tracking-wide max-w-lg">
-                Dobrodošli na zvaničnu web prezentaciju umetnika pod imenom
-                Kosmogenit.
+                Ja sam Kosmogenit. Dobrodošli u moju kuću na internetu. 
               </p>
             </div>
 
@@ -62,8 +61,7 @@ export function HeroSection() {
               {/* Experience the evolution of sound with KOSMOGENIT's unique blend of contemporary music and artistic vision. */}
               {/* Autentična pop muzika nastala kroz spoj poezije, akustike i
               elektronike. */}
-
-              "Snovest" je mesto u duši gde pobegneš od svega.
+              "Snovest" je ime mog albuma, prvenca. <br />Dobio je ime po mestu u duši gde tajne i dalje žive.
             </p>
           </div>
 

@@ -36,17 +36,21 @@ export function BioSection() {
             <div className="space-y-6">
               <p className="text-xl lg:text-2xl leading-relaxed text-white/90">
                 {/* <span className="text-[#FFD700] font-bold">KOSMOGENIT</span> Translate - is a pioneering music artist pushing the boundaries of contemporary sound. */}
-                <span className="text-[#FFD700] font-bold">KOSMOGENIT</span> je
-                inovativni muzički umetnik koji pomera granice savremenog pop
-                zvuka.
+                <span className="text-[#FFD700] font-bold">KOSMOGENIT</span> aka
+                Ivan Bošković, za sve koji ljube muziku, liriku i emociju.
               </p>
               <p className="text-lg lg:text-xl leading-relaxed text-white/70">
                 {/* Translate - With a unique blend of genres and a distinctive artistic vision, KOSMOGENIT has captivated audiences worldwide, creating music that resonates across cultures and generations. */}
-                Jedinstveni spoj žanrova i prepoznatljivi umetnički izraz, kroz
-                koji KOSMOGENIT oslikava prostore ljudske duše, spajajući
-                nostalgiju, afro, latino i orijentalne ritmove, akustiku i
-                savremenu produkciju u autentični muzički opus pod nazivom
-                "SNOVEST".
+                Zreo kantautorski izraz izašao iz pera i prstiju pesnika i
+                muzičara za koje nas vežu rana sećanja. Nepatvoren i dubok,
+                autentičan izraz Kosmogenita kao da najavljuje velike i
+                uzbudljive dane koji dolaze za ovog talentovanog muzičara i
+                njegovu publiku.
+              </p>
+
+              <p className="text-xl text-white/50 max-w-md italic leading-relaxed text-right">
+                {/* Translate - "Snovest" is a place in the soul where secrets still live. */}
+                Siniša Stojanović (pesnik)
               </p>
             </div>
 
@@ -71,9 +75,10 @@ export function BioSection() {
             </div> */}
 
             {/* Download Media Kit */}
-            <button 
-            onClick={() => setIsModalOpen(true)}
-            className="inline-flex items-center gap-3 px-10 py-5 bg-[#FFD700] text-black uppercase tracking-widest hover:bg-white transition-all duration-300 font-bold">
+            <button
+              onClick={() => setIsModalOpen(true)}
+              className="inline-flex items-center gap-3 px-10 py-5 bg-[#FFD700] text-black uppercase tracking-widest hover:bg-white transition-all duration-300 font-bold"
+            >
               <Download size={20} />
               <span>Media Kit</span>
             </button>
@@ -99,8 +104,11 @@ export function BioSection() {
         </div>
       </div>
 
-       {/* Media Kit Modal */}
-       <MediaKitModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
+      {/* Media Kit Modal */}
+      <MediaKitModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+      />
     </section>
   );
 }
