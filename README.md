@@ -44,11 +44,3 @@ Open http://localhost:3000 in your browser.
 
 app/page.tsx
 
----
-
-## Tech Stack:
-- Next.js 16.1.6 (App Router)
-- React 19
-- TypeScript
-- Tailwind CSS v4
-- Radix UI komponente
